@@ -4,6 +4,25 @@
     box-sizing: border-box;
 }
 
+#table {
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 200px;
+    margin: auto;
+    top: 300px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #dd3333;
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
 .game{
     display: flex;
     flex-direction: column;
