@@ -11,7 +11,7 @@ let table = document.getElementById("table");
 let movesLeft = document.getElementById("movesLeft");
 let computerCount = document.getElementById("cCount");
 let playerCount = document.getElementById("pCount");
-//
+
 let computerChoose = ["rock", "scissor", "paper"];
 
 window.onload = function () {
@@ -23,6 +23,7 @@ window.onload = function () {
 
     let result = Math.floor(Math.random() * 3);
 
+    // Current win logic
     if (playerChoose == computerChoose[result]) {
       table.innerText = "Draw !";
       table.style.display = "flex";
@@ -85,6 +86,7 @@ window.onload = function () {
       }
     }
 
+    // Win logic
     if (move == 0) {
       if (playerScore > computerScore) {
         table.innerText = `Player won with ${playerScore} score !`
