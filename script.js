@@ -98,6 +98,18 @@ window.onload = function () {
         movesLeft.innerText = move;
         playerCount.innerText = playerScore;
         computerCount.innerText = computerScore;
+      } else if (playerScore == computerScore) {
+        table.innerText = 'Draw !'
+        table.style.display = "flex";
+        setTimeout(() => {
+            table.style.display = "none";
+        }, 1000);
+        move = 10;
+        playerScore = 0;
+        computerScore = 0;
+        movesLeft.innerText = move;
+        playerCount.innerText = playerScore;
+        computerCount.innerText = computerScore;
       } else {
         table.innerText = `Computer won with ${computerScore} score !`
         move = 10;
